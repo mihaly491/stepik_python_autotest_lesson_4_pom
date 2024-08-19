@@ -2,8 +2,10 @@ from selenium.webdriver.common.by import By
 
 
 class BasePageLocators():
+    LANGUAGE_SELECT = (By.NAME, "language")
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    VIEW_BASKET_BUTTON = (By.CSS_SELECTOR, ".basket-mini a.btn")
 
 
 class MainPageLocators:
@@ -13,8 +15,13 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     LOGIN_FORM_INVALID = (By.CSS_SELECTOR, "#login_form_invalid")
-    REGISTER_FORM = (By.CSS_SELECTOR, "#registoer_form")
-    REGISTER_FORM_INVALID = (By.CSS_SELECTOR, "#registoer_form_invalid")
+    REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+    REGISTER_FORM_INVALID = (By.CSS_SELECTOR, "#register_form_invalid")
+
+
+class BasketPageLocators:
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+    BASKET_EMPTY_TEXT = (By.CSS_SELECTOR, "#content_inner p")
 
 
 class ProductPageLocators:
