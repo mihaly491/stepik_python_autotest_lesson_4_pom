@@ -2,7 +2,7 @@ import pytest
 from .Pages.main_page import MainPage
 from .Pages.product_page import ProductPage
 
-LINK = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0"
+LINK = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
 
 list_of_failed_num = [7]
 tested_links = [f"{LINK}?promo=offer{i}" if i not in list_of_failed_num else
