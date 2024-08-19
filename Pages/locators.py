@@ -5,6 +5,7 @@ class BasePageLocators():
     LANGUAGE_SELECT = (By.NAME, "language")
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
     VIEW_BASKET_BUTTON = (By.CSS_SELECTOR, ".basket-mini a.btn")
 
 
@@ -16,6 +17,10 @@ class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     LOGIN_FORM_INVALID = (By.CSS_SELECTOR, "#login_form_invalid")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+    REGISTER_EMAIL_INPUT = (By.NAME, "registration-email")
+    REGISTER_PASSWORD1_INPUT = (By.NAME, "registration-password1")
+    REGISTER_PASSWORD2_INPUT = (By.NAME, "registration-password2")
+    REGISTER_SUBMIT_BUTTON = (By.NAME, "registration_submit")
     REGISTER_FORM_INVALID = (By.CSS_SELECTOR, "#register_form_invalid")
 
 
