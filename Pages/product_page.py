@@ -1,6 +1,5 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
-import time
 
 
 class ProductPage(BasePage):
@@ -16,7 +15,6 @@ class ProductPage(BasePage):
 
     def add_product_to_basket(self):
         self.do_click(ProductPageLocators.ADD_TO_BASKET_BUTTON)
-        # self.solve_quiz_and_get_code()
 
     def should_be_success_message(self):
         assert self.is_element_present(*ProductPageLocators.ALERT_SUCCESS), "Success message not found!"

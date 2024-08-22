@@ -9,10 +9,6 @@ class BasePageLocators():
     VIEW_BASKET_BUTTON = (By.CSS_SELECTOR, ".basket-mini a.btn")
 
 
-class MainPageLocators:
-    pass
-
-
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     LOGIN_FORM_INVALID = (By.CSS_SELECTOR, "#login_form_invalid")
